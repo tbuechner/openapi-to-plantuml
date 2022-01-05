@@ -91,7 +91,8 @@ public final class Names {
         Preconditions.checkNotNull(ref);
         String className = refClassNames.get(ref);
         if (className == null) {
-            throw new RuntimeException("could not find ref=" + ref);
+            return "unknown";
+            //throw new RuntimeException("could not find ref=" + ref);
         } else {
             return className;
         }
